@@ -1,0 +1,55 @@
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  height: auto;
+  width: 100%;
+  margin-top: 1.5rem;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .img-container {
+    .userImage {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #4b4b4b;
+      border-radius: 50%;
+      position: relative;
+      right: 1.4rem;
+      bottom: 1rem;
+    }
+
+    &-header {
+      background: #212020;
+      color: #ffffff;
+      width: 100%;
+      padding: 0.5rem;
+      height: 40px;
+      display: flex;
+      border-radius: 5px 5px 0 0;
+
+      h1 {
+        font-size: 1.1rem;
+        position: relative;
+        right: 0.8rem;
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .img-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .img-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

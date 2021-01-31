@@ -1,0 +1,22 @@
+.artOfDay {
+  width: 75%;
+  height: 70%;
+
+  img {
+    height: 100%;
+    width: 80%;
+  }
+
+  &__name {
+    color: #777777;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  &__artist {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+  }
+}

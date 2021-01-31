@@ -1,0 +1,73 @@
+.landingpage {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+
+  &__brandName {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    padding-bottom: 0;
+    line-height: 0.9;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.leftCol {
+  height: 700px;
+  width: 50%;
+
+  img {
+    height: 100%;
+    width: 80%;
+  }
+
+  p {
+  }
+}
+
+.rightCol {
+  height: 100%;
+  width: 50%;
+  padding-top: 11rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .landingpage {
+    padding-bottom: 2rem;
+
+    .leftCol {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      height: 400px;
+      margin-top: 3rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .rightCol {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      padding-top: 0;
+      margin: 0 auto;
+    }
+
+    .signIn {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .landingpage {
+    .leftCol {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.signIn {
+  width: 80%;
+
+  .h-primary {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  hr {
+    background-color: #eaeaea;
+    margin-top: 0.5rem;
+  }
+
+  .authForm {
+    margin-top: 2rem;
+
+    button {
+      font-family: 'Poppins', sans-serif;
+      float: right;
+      margin-top: 2rem;
+    }
+  }
+}

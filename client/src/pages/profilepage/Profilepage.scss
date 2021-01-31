@@ -1,0 +1,146 @@
+.profilepage {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+
+  h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    margin-top: 0.2rem;
+  }
+
+  .usercard {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    border-radius: 15px;
+    // color: #3f538b;
+    color: #232323;
+    position: relative;
+
+    &_banner {
+      position: absolute;
+      top: 0;
+      border-radius: 10px;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: rgb(146, 146, 146);
+      z-index: -5;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+      }
+    }
+
+    &_left {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_img-ctn {
+      height: 175px;
+      width: 175px;
+      background: lightgray;
+      border-radius: 50%;
+      align-self: center;
+      border: 5px solid white;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &_right {
+      margin-top: 11rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      right: 2vw;
+    }
+
+    &_bio {
+      color: #8a8a8a;
+      font-size: 1.2rem;
+    }
+
+    &_followers {
+      color: #8481fc;
+      font-size: 1.1rem;
+      padding-top: 0.3rem;
+    }
+
+    button {
+      background: rgb(104, 104, 255);
+      color: white;
+      margin-top: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      margin-right: 1rem;
+
+      &:hover {
+        background: rgb(57, 57, 255);
+      }
+
+      span {
+        padding: 0.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .profilepage {
+    &_right {
+      right: 3vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .profilepage {
+    &_right {
+      left: 5vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .profilepage {
+    .usercard {
+      flex-direction: column;
+
+      &_img-ctn {
+        position: relative;
+        top: 3rem;
+      }
+
+      &_left {
+        width: 100%;
+      }
+
+      &_right {
+        align-items: center;
+        margin-top: 0;
+        position: relative;
+        bottom: 4rem;
+        right: 0;
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

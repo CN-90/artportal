@@ -1,0 +1,64 @@
+.settings {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  // background: #ececec;
+  padding: 2rem;
+
+  &_primary-header {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  &_header {
+    // background: #e6e6e6;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    &-username {
+      font-size: 1.5rem;
+      margin-left: 1.4rem;
+    }
+
+    img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+
+  &_form-ctn {
+    margin-top: 1rem;
+
+    input[type='checkbox'] {
+      width: 1rem;
+    }
+
+    label {
+      font-size: 1rem;
+      padding-top: 0.2rem;
+    }
+
+    textarea {
+      background: #ececec;
+      padding: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .formgroup {
+      justify-content: space-between;
+    }
+    button {
+      background: #6868ff;
+      color: white;
+      font-weight: bold;
+      float: right;
+    }
+  }
+}

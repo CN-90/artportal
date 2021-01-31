@@ -1,0 +1,56 @@
+.postmodal {
+  position: fixed;
+  height: auto;
+  width: 40%;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 500;
+  border-radius: 10px;
+  background: rgb(230, 230, 230);
+  padding-bottom: 3rem;
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(68, 68, 68);
+
+    svg {
+      cursor: pointer;
+      &:hover {
+        color: rgb(40, 40, 247);
+      }
+    }
+  }
+
+  &_form {
+    margin-top: 2rem;
+  }
+
+  &_btn-ctn {
+    float: right;
+  }
+
+  textarea {
+    background: rgb(243, 243, 243);
+    padding: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .postmodal {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .postmodal {
+    width: 90%;
+  }
+}

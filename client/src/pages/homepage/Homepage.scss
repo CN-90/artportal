@@ -1,0 +1,14 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2rem;
+
+  &_primary-header {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;  
+    font-weight: bold;
+    // text-decoration: underline;
+    
+  }
+}
